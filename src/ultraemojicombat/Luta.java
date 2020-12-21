@@ -35,6 +35,7 @@ public class Luta {
 
             Random aleatorio = new Random();
             int vencedor = aleatorio.nextInt(3);// 0 1 2
+
             switch (vencedor) {
 
                 case 0: //Empate
@@ -46,7 +47,6 @@ public class Luta {
                     System.out.println("Vitória do " + this.desafiado.getNome());
                     this.desafiado.ganharLuta();
                     this.desafiado.perderLuta();
-
                     break;
                 case 2:  //Desafiante vence
                     System.out.println("Vitória do " + this.desafiante.getNome());
